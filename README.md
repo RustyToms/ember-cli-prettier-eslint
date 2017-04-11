@@ -1,8 +1,8 @@
 
-ember-cli-eslint
+ember-cli-prettier-eslint
 ==============================================================================
 
-[![Latest NPM release][npm-badge]][npm-badge-url]
+[<!-- ![Latest NPM release][npm-badge]][npm-badge-url]
 [![TravisCI Build Status][travis-badge]][travis-badge-url]
 [![Ember Observer Score][ember-observer-badge]][ember-observer-badge-url]
 
@@ -11,7 +11,7 @@ ember-cli-eslint
 [travis-badge]: https://img.shields.io/travis/ember-cli/ember-cli-eslint/master.svg
 [travis-badge-url]: https://travis-ci.org/ember-cli/ember-cli-eslint
 [ember-observer-badge]: https://emberobserver.com/badges/ember-cli-eslint.svg
-[ember-observer-badge-url]: https://emberobserver.com/addons/ember-cli-eslint
+[ember-observer-badge-url]: https://emberobserver.com/addons/ember-cli-eslint -->
 
 [ESLint](http://eslint.org/) for [Ember CLI](https://ember-cli.com/) apps and addons
 

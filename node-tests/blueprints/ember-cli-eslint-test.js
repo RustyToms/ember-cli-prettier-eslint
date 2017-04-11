@@ -17,7 +17,7 @@ td.config({ promiseConstructor: require('rsvp').Promise });
 
 var requireFromCLI = require('ember-cli-blueprint-test-helpers/lib/helpers/require-from-cli');
 
-describe('Acceptance: install ember-cli-eslint', function() {
+describe('Acceptance: install ember-cli-prettier-eslint', function() {
   setupTestHooks(this);
 
   var Blueprint = requireFromCLI('lib/models/blueprint');
@@ -46,7 +46,7 @@ describe('Acceptance: install ember-cli-eslint', function() {
   });
 
   it('removes the JSHint addon', function() {
-    var args = ['ember-cli-eslint', 'foo'];
+    var args = ['ember-cli-prettier-eslint', 'foo'];
 
     td.when(prompt(td.matchers.anything())).thenResolve({ deleteFiles: 'all' });
 
@@ -80,7 +80,7 @@ describe('Acceptance: install ember-cli-eslint', function() {
   });
 
   it('Does not touch foreign .jshintrc files', function() {
-    var args = ['ember-cli-eslint', 'foo'];
+    var args = ['ember-cli-prettier-eslint', 'foo'];
     var foreignJshintrcPaths = [
       path.join('.', 'bower_components', 'foreign-package', '.jshintrc'),
       path.join('.', 'tmp', '.jshintrc'),
@@ -107,7 +107,7 @@ describe('Acceptance: install ember-cli-eslint', function() {
   });
 
   it('does not remove any files if it shouldn\'t', function() {
-    var args = ['ember-cli-eslint', 'foo'];
+    var args = ['ember-cli-prettier-eslint', 'foo'];
 
     td.when(prompt(td.matchers.anything())).thenResolve({ deleteFiles: 'none' });
 

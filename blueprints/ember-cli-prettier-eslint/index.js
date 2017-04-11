@@ -24,7 +24,7 @@ function synchronize(items, cb) {
 }
 
 module.exports = {
-  name: 'ember-cli-eslint',
+  name: 'ember-cli-prettier-eslint',
 
   normalizeEntityName: function() {
     // this prevents an error when the entityName is
@@ -38,7 +38,7 @@ module.exports = {
       removeJSHintDep = this.removePackageFromProject('ember-cli-jshint');
     } else {
       removeJSHintDep = Promise.resolve();
-    } 
+    }
 
     var removeJSHintConfig = this._removeJSHintConfig.bind(this);
 

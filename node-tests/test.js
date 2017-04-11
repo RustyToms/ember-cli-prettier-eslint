@@ -6,7 +6,7 @@ var expect = require('chai').expect;
 
 var FAILING_FILE = __dirname + '/../tests/dummy/app/unused.js';
 
-describe('ember-cli-eslint', function() {
+describe('ember-cli-prettier-eslint', function() {
   this.timeout(60000);
 
   afterEach(function() {

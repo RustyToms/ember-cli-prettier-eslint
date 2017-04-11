@@ -3,7 +3,7 @@
 /* eslint-env node */
 
 module.exports = {
-  name: 'ember-cli-eslint',
+  name: 'ember-cli-prettier-eslint',
 
   // TODO: Disable this (or set it to return false) before committing
   isDevelopingAddon: function() {
